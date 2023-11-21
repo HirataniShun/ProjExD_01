@@ -11,6 +11,8 @@ def main():
 
     kou1 = pg.image.load("ex01/fig/3.png")
     kou1 = pg.transform.flip(kou1, True, False)
+    kou2 = pg.transform.rotozoom(kou1, 10, 1.0)
+    kou_list = [kou1, kou2]
 
     while True:
         for event in pg.event.get():
